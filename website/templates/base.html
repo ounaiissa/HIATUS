@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      style="border-radius: 50%"
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='images/favicon.jpg')}}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for ('static', filename='CSS/base.css')}}"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <title>{% block title %} Home {% endblock %}</title>
+  </head>
+  <body>
+    <!-- style="background: url({{ url_for('static', filename='images/about.jpg')}});" -->
+    <nav
+      class="navbar navbar-expand-lg navbar-fixed-top scrolling-navbar"
+      id="navbar_top"
+    >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+        id="btn"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-header">
+        <div class="logo2">
+          <img
+            src="{{ url_for('static', filename='images/logo2.png')}}"
+            alt=""
+          />
+        </div>
+        <!-- <a href="#" class="navbar-brand">Hiatus</a> -->
+      </div>
+      <div class="collapse navbar-collapse" id="navbar">
+        <div class="navbar-nav" style="margin-left: 50%">
+          <a class="nav-item nav-link px-3" id="about" href="/about"
+            >About Us</a
+          >
+          <a class="nav-item nav-link px-3" href="#contact">Contact</a>
+          <a class="nav-item nav-link px-3" href="#roadmap">Stories</a>
+          {% if user.is_authenticated %}
+          <a class="nav-item nav-link px-3" id="home" href="/">client space</a>
+          <a class="nav-item nav-link px-3" id="logout" href="/logout"
+            >Logout</a
+          >
+
+          {% else %}
+
+          <a class="nav-item nav-link px-3" id="login" href="/login">Login</a>
+          <a
+            class="nav-item nav-link px-5 btn"
+            style="
+              border: #fff1e7 solid;
+              border-radius: 30px;
+              background-color: #fff1e7;
+              color: #6b4674;
+              border: solid;
+            "
+            id="sign-up"
+            href="/sign-up"
+            >Join us</a
+          >
+          {% endif %}
+        </div>
+      </div>
+    </nav>
+
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    messages %} {% for category, message in messages%} {% if category == "error"
+    %}
+    <div class="alert alert-danger alert-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    {% else %}
+    <div class="alert alert-success alert-dismissable fade show" role="alert">
+      {{ message }}
+      <button type="button" class="close" data-dismiss="alert">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    {% endif%} {% endfor %} {% endif %} {% endwith %} {% block content %} {%
+    endblock%}
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const navbar = document.querySelector("#navbar_top");
+      window.onscroll = () => {
+        if (window.scrollY > 800) {
+          navbar.classList.add("nav-active");
+        } else {
+          navbar.classList.remove("nav-active");
+        }
+      };
+    </script>
+    <!-- <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='index.js')}}"
+    ></script> -->
+  </body>
+</html>

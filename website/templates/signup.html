@@ -1,0 +1,85 @@
+{% extends "base.html" %} {% block title %}Sign up{% endblock %} <br />
+{% block content %}
+<link rel="stylesheet" href="../static/CSS/signup.css" />
+<div class="container p-5">
+  <div class="row">
+    <div id="para" class="col p-4" style="margin: auto">
+      <h1 class="p-4" style="font-size: 50px; font-weight: 700; color: white">
+        we'd love to hear from you!
+      </h1>
+      <p style="color: white; font-size: 28px" class="p-4">
+        Thank you for your interest in Future Goals! Please leave your details
+        below and we will contact you with further information
+      </p>
+    </div>
+    <div id="ey" class="col bg-black p-4" style="border-radius: 65px">
+      <form method="post">
+        <h3 align="center" class="mb-4">Sign Up</h3>
+        <div class="flex-container">
+          <div class="form-group">
+            <label for="firstName">first name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="firstName"
+              id="firstName"
+              placeholder="Enter first name"
+            />
+          </div>
+          <div class="form-group" style="margin-left: 14%">
+            <label for="lastName">last name</label>
+            <input
+              type="text"
+              class="form-control"
+              name="lastName"
+              id="lastName"
+              placeholder="Enter last name"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email adress</label>
+          <input
+            type="email"
+            class="form-control"
+            name="email"
+            id="email"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password1">password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password1"
+            id="password1"
+            placeholder="Enter password"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password2">password</label>
+          <input
+            type="password"
+            class="form-control"
+            name="password2"
+            id="password2"
+            placeholder="confirm password "
+            required
+          />
+        </div>
+        <br />
+        <button
+          type="submit"
+          id="submit"
+          class="btn btn-light"
+          style="border-radius: 30px"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock%}

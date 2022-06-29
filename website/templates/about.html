@@ -1,0 +1,355 @@
+{% extends "base.html" %} {% block title %} Hiatus {% endblock %} <br />
+{% block content %}
+<link
+  rel="stylesheet"
+  href="{{ url_for ('static', filename='CSS/about.css')}}"
+/>
+<link
+  rel="stylesheet"
+  href="{{ url_for ('static', filename='CSS/all.min.css')}}"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<style>
+  body {
+    background-color: #fff1e7;
+  }
+</style>
+<div
+  class="about"
+  style="background: url({{ url_for('static', filename='images/back.jpeg')}}) no-repeat;background-size: cover"
+>
+  <!-- <img  src="{{ url_for('static', filename='images/about.jpg')}}" alt=""> -->
+  <div class="hero">
+    <h1>Build your tomorrow</h1>
+    <h3>
+      At HIATUS we do everything we can to help you, <br />
+      to become the best version of your self.
+    </h3>
+  </div>
+</div>
+<div class="services" id="services">
+  <div class="content">
+    <div class="bg-service">
+      <img src="{{ url_for('static', filename='images/tree.jpg')}}" alt="" />
+      <h1>EVERYTHIN YOU NEED IN ONE PLACE</h1>
+    </div>
+    <p>
+      EXACTLY WHAT YOU READ EVERYTHING YOU NEED IN ONE PLACE. GREEN SPACES FOR
+      GOOD MENTAL AND PHYSICAL HEALTH. A COMMUNITY GROUP TO CREATE A SAFE AND
+      COMFORTABLE ENVIRONMENT FOR YOU TO VENTILATE AND SHARE YOUR PAIN TO LET GO
+      AND EMBRACE HEALING
+    </p>
+
+    <a href="#box" class="btn">Learn more</a>
+  </div>
+
+  <div class="content2">
+    <div class="bg-service">
+      <h1>CREATIVE AREA</h1>
+      <img src="{{ url_for('static', filename='images/atelier.jpg')}}" alt="" />
+    </div>
+
+    <p>
+      ART STUDIOS TO BRING YOUR IMAGINATION TO LIFE AND HELP YOU EXPRESS
+      YOURSELF IN A CREATIVE WAY ! ALONG WITH SHARING YOUR FEELINGS IN THOUGHS
+      THROUGH ART TO HELP OTHERS IN SIMILAR SITUATION TO NOURISH THEMSELM
+      THROUGH ART.
+    </p>
+    <a href="#box" class="btn"> Learn more</a>
+  </div>
+
+  <div class="content3">
+    <div class="bg-service">
+      <img
+        src="{{ url_for('static', filename='images/therapist.jpg')}}"
+        alt=""
+      />
+      <h1>WE PROVIDE A GROUP OF SPECIALIST</h1>
+    </div>
+
+    <p>
+      OUR FIRST SERVICE OFFERS YOU A FREE SECTION HOLE AND PROFESSIONALS AND
+      PSYCHOLOGISTS YOU CAN TALK ABOUT ALL YOUR PROBLEMS AND WE WILL FIND YOU
+      GOOD SOLUTIONS
+    </p>
+    <a href="#box" class="btn">Learn more</a>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+
+<section
+  id="roadmap"
+  class="spacer"
+  style="
+    background-color: #6b4674;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    padding-bottom: 10%;
+  "
+>
+  <div class="container">
+    <h1
+      class="title text-center"
+      style="
+        font-size: 55px;
+        margin-top: 50px;
+        color: #f5f5f5;
+        font-weight: 700;
+        font-family: Helvetica;
+      "
+    >
+      Testimonials
+    </h1>
+    <p class="lead text-dark text-center mb-5">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+    </p>
+    <div class="tm-full-row pb-3 pt-4" style="overflow: hidden">
+      <div
+        class="swiper swiperRoadmap"
+        style="padding-bottom: 67px; padding-top: 50px"
+      >
+        <!-- <div
+          class="parallax-bg"
+          style="
+            background-image: url(https://res.cloudinary.com/dpad/image/upload/v1644233932/bg-dot_rerswu.png);
+          "
+          data-swiper-parallax="-30%"
+          
+        ></div> -->
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card road-card card-">
+              <div class="card-body">
+                <ul class="simple-list">
+                  <p>
+                    Thank you Hiatus for helping me navigate throught difficult
+                    family situation.
+                  </p>
+                </ul>
+              </div>
+            </div>
+            <img
+              src="{{ url_for('static', filename='images/pfp3.jpg')}}"
+              alt=""
+            />
+            <h3>Gianina Castron</h3>
+          </div>
+          <div class="swiper-slide">
+            <div class="card road-card card-">
+              <div class="card-body">
+                <ul class="simple-list">
+                  <p>Great job hearing me out and giving me direction</p>
+                </ul>
+              </div>
+            </div>
+            <img
+              src="{{ url_for('static', filename='images/pfp1.jpg')}}"
+              alt=""
+            />
+            <h3>LaCourny Setzer</h3>
+          </div>
+          <div class="swiper-slide">
+            <div class="card road-card card-">
+              <div class="card-body">
+                <ul class="simple-list">
+                  <p>
+                    I can actually see progress in my mental health which is
+                    something i haven't been able to see in a couple of years
+                    and it's thanks to the staff in Hiatus.
+                  </p>
+                </ul>
+              </div>
+            </div>
+            <img
+              src="{{ url_for('static', filename='images/pfp2.jpg')}}"
+              alt=""
+            />
+            <h3>zenin maki</h3>
+          </div>
+          <div class="swiper-slide">
+            <div class="card road-card card-">
+              <div class="card-body">
+                <ul class="simple-list">
+                  <p>
+                    Best decision I've ever took was coming to Hiatus center, it
+                    helped me a lot mentally and physically.
+                  </p>
+                </ul>
+              </div>
+            </div>
+            <img
+              src="{{ url_for('static', filename='images/pfp1.jpg')}}"
+              alt=""
+            />
+            <h3>Patti Lehr</h3>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="navigation">
+               <div class="swiper-button-next"></div>
+               <div class="swiper-button-prev"></div>
+             </div> -->
+    </div>
+    <hr style="border: 1px dashed #f5f5f5; margin-top: -20px" />
+  </div>
+</section>
+
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+  var swiper = new Swiper(".swiperRoadmap", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    speed: 600,
+    parallax: true,
+    freeMode: true,
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 0,
+    grabCursor: true,
+    slidesPerView: 4,
+    breakpoints: {
+      1900: {
+        slidesPerView: 4,
+        spaceBetween: 0,
+      },
+
+      1400: {
+        slidesPerView: 4,
+        spaceBetween: 50,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      900: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+    },
+  });
+</script>
+
+<div class="faq" style="padding-bottom: 10%">
+  <h1>Things people ask a lot</h1>
+  <center>
+    <a class="btn px-5" id="faq" href="/faq"
+      >TAKE ME THERE<i class="fa-solid fa-arrow-right-long"></i
+    ></a>
+  </center>
+</div>
+
+<!-- <div class="slider-area" style="background-color: #fff1e7">
+  <h2>Our Clients</h2>
+  <div class="wrapper">
+    <div class="item">
+      <img alt="" src="{{ url_for('static', filename='images/clients.PNG')}}" />
+    </div>
+    <div class="item">
+      <img alt="" src="{{ url_for('static', filename='images/clients.PNG')}}" />
+    </div>
+    <div class="item">
+      <img alt="" src="{{ url_for('static', filename='images/clients.PNG')}}" />
+    </div>
+    <div class="item">
+      <img alt="" src="{{ url_for('static', filename='images/clients.PNG')}}" />
+    </div>
+    <div class="item">
+      <img
+        alt=""
+        src="src"
+        ="{{ url_for('static', filename='images/tree.jpg')}}"
+      />
+    </div>
+  </div>
+</div> -->
+
+<div class="end">
+  <h1>Don't be a stranger</h1>
+</div>
+
+<footer id="contact" class="footer">
+  <!-- <h1>Don't be a stranger</h1> -->
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">about us</a></li>
+          <li><a href="#">our services</a></li>
+          <li><a href="#">stories</a></li>
+          <li><a href="#">privacy policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">contacts</a></li>
+          <li><a href="#">payment options</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Place</h4>
+        <ul>
+          <li>
+            <a href="#"
+              >Abraaj Al Awadi Sharq,<br />
+              Block 2 Kuwait City <br />
+              +965 98896248</a
+            >
+          </li>
+          <li><a href="#">HIATUS@GMAIL.COM</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+{% endblock%}

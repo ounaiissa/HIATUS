@@ -1,0 +1,126 @@
+{% extends "base.html" %} {% block title %} FAQ {% endblock %} <br />
+{% block content %}
+<!-- <link rel="stylesheet" href="/website/static/CSS/question.css" /> -->
+<link
+  rel="stylesheet"
+  href="{{ url_for ('static', filename='CSS/question.css')}}"
+/>
+<section id="faq">
+  <h2 class="title">FAQs</h2>
+
+  <div class="faq">
+    <div class="question">
+      <h3>Whats the price to get to our center ?</h3>
+      <svg width="15" height="10" viewBox="0 0 42 25">
+        <path
+          d="M3 3L21 21L39 3"
+          storke="white"
+          storke-width="7"
+          storke-linecap="round"
+        />
+      </svg>
+    </div>
+    <div class="answer">
+      <p>
+        For the price, it depends on your situation they're higher prices and
+        lower ones you can pick whatever you want. we're here to serve our
+        clients.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="question">
+      <h3>Whats the price to get to our center ?</h3>
+      <svg width="15" height="10" viewBox="0 0 42 25">
+        <path
+          d="M3 3L21 21L39 3"
+          storke="white"
+          storke-width="7"
+          storke-linecap="round"
+        />
+      </svg>
+    </div>
+    <div class="answer">
+      <p>
+        For the price, it depends on your situation they're higher prices and
+        lower ones you can pick whatever you want. we're here to serve our
+        clients.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="question">
+      <h3>Whats the price to get to our center ?</h3>
+      <svg width="15" height="10" viewBox="0 0 42 25">
+        <path
+          d="M3 3L21 21L39 3"
+          storke="white"
+          storke-width="7"
+          storke-linecap="round"
+        />
+      </svg>
+    </div>
+    <div class="answer">
+      <p>
+        For the price, it depends on your situation they're higher prices and
+        lower ones you can pick whatever you want. we're here to serve our
+        clients.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="question">
+      <h3>Whats the price to get to our center ?</h3>
+      <svg width="15" height="10" viewBox="0 0 42 25">
+        <path
+          d="M3 3L21 21L39 3"
+          storke="white"
+          storke-width="7"
+          storke-linecap="round"
+        />
+      </svg>
+    </div>
+    <div class="answer">
+      <p>
+        For the price, it depends on your situation they're higher prices and
+        lower ones you can pick whatever you want. we're here to serve our
+        clients.
+      </p>
+    </div>
+  </div>
+
+  <div class="faq">
+    <div class="question">
+      <h3>Whats the price to get to our center ?</h3>
+      <svg width="15" height="10" viewBox="0 0 42 25">
+        <path
+          d="M3 3L21 21L39 3"
+          storke="white"
+          storke-width="7"
+          storke-linecap="round"
+        />
+      </svg>
+    </div>
+    <div class="answer">
+      <p>
+        For the price, it depends on your situation they're higher prices and
+        lower ones you can pick whatever you want. we're here to serve our
+        clients.
+      </p>
+    </div>
+
+    <script>
+      const faqs = document.querySelectorAll(".faq");
+
+      faqs.forEach((faq) => {
+        faq.addEventListener("click", () => {
+          faq.classList.toggle("active");
+        });
+      });
+    </script>
+    {% endblock%}
+  </div>
+</section>

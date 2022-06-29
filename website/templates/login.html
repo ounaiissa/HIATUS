@@ -1,0 +1,74 @@
+{% extends "base.html" %} {% block title %}login{% endblock %} <br />
+{% block content %}
+<!-- <h1>this is the login page</h1>
+{% if boolean == True %} Yes it is true! {% else%} No it isn't true! {% endif %} -->
+<style>
+  .container .form-group {
+    font-size: 23px;
+    margin-bottom: 6px;
+  }
+
+  #submit:hover {
+    background-color: #6b4674;
+    border: 4px solid #fff;
+  }
+
+  #navbar_top {
+    background-color: #6b4674;
+  }
+
+  @media (max-width: 425px) {
+    .container {
+      max-width: 400px;
+      margin-top: 5%;
+    }
+  }
+</style>
+<div
+  class="container"
+  style="
+    background-color: #b5a2ba;
+    border-radius: 30px;
+    height: 500px;
+    width: 700px;
+    margin-top: 10%;
+    padding-bottom: 7%;
+  "
+>
+  <form method="post">
+    <h3 align="center" class="p-4">Login</h3>
+    <div class="form-group p-3">
+      <label for="email" class="mb-3">Email adress</label>
+      <input
+        style="font-size: 23px"
+        type="email"
+        class="form-control"
+        name="email"
+        id="email"
+        placeholder="Enter email"
+      />
+    </div>
+    <div class="form-group p-3">
+      <label for="password" class="mb-3">password</label>
+      <input
+        style="font-size: 23px"
+        type="password"
+        class="form-control"
+        name="password"
+        id="password"
+        placeholder="Enter password"
+      />
+    </div>
+
+    <br />
+    <button
+      type="submit"
+      id="submit"
+      class="btn btn-light m-3 px-4"
+      style="border-radius: 30px; font-size: 24px; font-weight: 600"
+    >
+      Login
+    </button>
+  </form>
+</div>
+{% endblock%}
