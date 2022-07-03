@@ -83,7 +83,7 @@ font-weight: 400;
 font-size: 24px;
 line-height: 28px;
 
-color: #000000;
+color: #6B4674;
 }
 
 .services .content .btn{
@@ -230,7 +230,7 @@ color: #FFF1E7;
     line-height: 28px;
     text-align: justify;
     
-    color: #000000;
+    color: #6B4674;
     }
 .services .content3 .btn{
     width: 200px;
@@ -526,7 +526,7 @@ ul{
 }
 
 .footer-col ul li a:hover{
-    color: #ffff;
+    color: #946e9e;
     padding-left: 8px;
 }
 .footer-col .social-links a{
