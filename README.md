@@ -1,85 +1,17 @@
 # HIATUS
-about us
-stories
-contact
-log in
-Join
-about us
-Build your tomorrow
-At HIATUS we do everything we can to help you,to become your
- best self for the rest of your life.
+![image](https://user-images.githubusercontent.com/92831062/234516621-fac39b21-239f-4cf2-8037-1f57f6b7e392.png)
+![image](https://user-images.githubusercontent.com/92831062/234517427-68735fe4-892a-4393-95cc-fb3c1298decc.png)
+![image](https://user-images.githubusercontent.com/92831062/234517488-344d99ae-eae0-4cff-9fb6-0aa383b5a538.png)
 
-WE PROVIDE A GROUP OF SPECIALISTS
-Provide a group of specialists ,psychologists and nutritionists who find you the best program to feel better mentally and physically.
-Learn more
-WE PROVIDE
-A GROUP OF SPECIALISTS
-Provide a group of specialists ,psychologists and nutritionists who find you the best program to feel better mentally and physically.
-Learn more
-EVERYTHIN YOU NEED IN ONE PLACE.
-our center offers you a space where you can be creative and study, like libraries and art studios.
-Learn more
-Happy Customer Stories
-Happy Customer Stories
-,,
-,,
-,,
-,,
-,,
-,,
-bla bla bla bla bla bla
-bla bla bla bla bla bla 
-bla bla bla bla bla bla 
-bla bla bla bla bla bla 
-bla bla bla bla bla bla
-bla bla bla bla bla bla 
-bla bla bla bla bla bla 
-bla bla bla bla bla bla 
-bla bla bla bla bla bla
-bla bla bla bla bla bla 
-bla bla bla bla bla bla 
-bla bla bla bla bla bla 
-Thank you Hiatus for helping me 
-navigate through difficult family 
-situations. <3
-Great job hearing me out and giving 
-me direction
-I can actually see progress in my
-mental health which is something I
-haven't been able to say in 15 years
-and it's thanks to her.
-Gigi hadid
-Kendell jenner
-Justin biebre
-Patti Lehr
-Gianina Catron
-LaCourtney Setzer
-THINGS PEOPLE ASK A LOT
+![image](https://user-images.githubusercontent.com/92831062/234517012-314d5f50-0a94-425f-96b3-873784816c09.png)
+![image](https://user-images.githubusercontent.com/92831062/234517104-1344c4c3-9cac-455e-be9f-919139e98d4a.png)
 
-TAKE ME THERE ->
-Name*
-We'd love to 
-hear from 
-you!
-First Name
-Last Name
-Phone Number*
-Gmail*
-Thank you for your interest in
-Future Goals! Please leave your
-details below and we will contact 
-you with further information
-Message*
-Submit
-Don’t be 
-a stranger
-LEARN ABOUT US
-CONTACT
-About us
-Abraaj Al Awadi Sharq, Block
-2 Kuwait City +965
-98896248
-Our service
-Stories
-Contact
-HIATUS@GMAIL.COM
+![image](https://user-images.githubusercontent.com/92831062/234517229-f834d18c-d7ec-4086-8768-b9f33a062434.png)
+
+![image](https://user-images.githubusercontent.com/92831062/234516788-cb763469-17c1-44cc-82e8-4900026cb1c9.png)
+![image](https://user-images.githubusercontent.com/92831062/234516865-ff41af5b-0049-48b2-8639-b34f4e7315b0.png)
+![image](https://user-images.githubusercontent.com/92831062/234516941-7109e481-b4d2-4637-ab3b-f06a063958d5.png)
+
+![image](https://user-images.githubusercontent.com/92831062/234517346-30f55fe3-804c-4250-b088-4e7916204707.png)
+
+![image](https://user-images.githubusercontent.com/92831062/234517287-543ad145-0de3-42a8-81e9-c2a6a4416710.png)
